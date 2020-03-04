@@ -3650,7 +3650,6 @@ id	timestamp	content	user	topic
 4437	2020-02-28 16:15:23	users judges paragraph 511 relevant	AA6RYE4V0IBKM	5
 4438	2020-02-28 16:15:23	search started	A1GKD3NG1NNHRP	2
 4439	2020-02-28 16:15:28	users judges paragraph 8 relevant	A1FVXS8IM5QYO8	9
-4440	2020-02-28 16:15:30	topic 3 is assigned to the user	AWLT46A9EWTK8	3
 4443	2020-02-28 16:15:34	search started	A3JUPCWYN6N6H4	3
 4445	2020-02-28 16:15:37	engine returns: 632	A2T7VIFQS647LC	1
 4446	2020-02-28 16:15:37	user queries subtopic 41 with: Harvard history	A2T7VIFQS647LC	1
@@ -3658,7 +3657,6 @@ id	timestamp	content	user	topic
 4448	2020-02-28 16:15:38	engine returns: 496	AA6RYE4V0IBKM	5
 4449	2020-02-28 16:15:38	user queries subtopic 6 with: types of rocks	AA6RYE4V0IBKM	5
 4450	2020-02-28 16:15:38	engine returns: 474	AYW62R027PUT1	2
-4451	2020-02-28 16:15:40	task started	AWLT46A9EWTK8	3
 4452	2020-02-28 16:15:42	topic read	A2CTA782EBXUCT	5
 4455	2020-02-28 16:15:48	users judges paragraph 496 relevant	AA6RYE4V0IBKM	5
 4456	2020-02-28 16:15:51	users judges paragraph 632 relevant	A2T7VIFQS647LC	1
@@ -3666,9 +3664,7 @@ id	timestamp	content	user	topic
 4458	2020-02-28 16:15:52	search started	A2CTA782EBXUCT	5
 4459	2020-02-28 16:15:57	user queries subtopic 52 with: european union law	A2C84POENS2UNY	11
 4460	2020-02-28 16:15:57	engine returns: 332	A2C84POENS2UNY	11
-4462	2020-02-28 16:15:58	topic read	AWLT46A9EWTK8	3
 4463	2020-02-28 16:15:58	users judges paragraph 332 relevant	A2C84POENS2UNY	11
-4466	2020-02-28 16:16:00	search started	AWLT46A9EWTK8	3
 4467	2020-02-28 16:16:03	satisfaction question started	A2C84POENS2UNY	11
 4468	2020-02-28 16:16:06	user is unsatisfied	A2C84POENS2UNY	11
 4469	2020-02-28 16:16:06	task completed	A2C84POENS2UNY	11
@@ -3686,22 +3682,16 @@ id	timestamp	content	user	topic
 4481	2020-02-28 16:16:24	user queries subtopic 1 with: Complete history of the amazon rainforest	A2Y0WNHMT4PZ4C	10
 4482	2020-02-28 16:16:24	engine returns: 374	A2Y0WNHMT4PZ4C	10
 4483	2020-02-28 16:16:26	satisfaction question started	AA6RYE4V0IBKM	5
-4484	2020-02-28 16:16:28	user queries subtopic 71 with: racism	AWLT46A9EWTK8	3
-4485	2020-02-28 16:16:28	engine returns: 855	AWLT46A9EWTK8	3
 4486	2020-02-28 16:16:28	user is unsatisfied	AA6RYE4V0IBKM	5
 4487	2020-02-28 16:16:28	task completed	AA6RYE4V0IBKM	5
 4488	2020-02-28 16:16:30	engine returns: 521	A2CTA782EBXUCT	5
 4489	2020-02-28 16:16:30	user queries subtopic 11 with: who created the field of geology	A2CTA782EBXUCT	5
 4490	2020-02-28 16:16:33	user queries subtopic 37 with: harvard facts	A2T7VIFQS647LC	1
 4491	2020-02-28 16:16:33	engine returns: 632	A2T7VIFQS647LC	1
-4492	2020-02-28 16:16:35	users judges paragraph 855 irrelevant	AWLT46A9EWTK8	3
 4493	2020-02-28 16:16:37	user queries subtopic 58 with: origin of european union law	AP4A0MZOKR52J	11
 4494	2020-02-28 16:16:37	engine returns: 353	AP4A0MZOKR52J	11
 4495	2020-02-28 16:16:41	users judges paragraph 632 relevant	A2T7VIFQS647LC	1
 4496	2020-02-28 16:16:43	users judges paragraph 474 relevant	AYW62R027PUT1	2
-4497	2020-02-28 16:16:44	satisfaction question started	AWLT46A9EWTK8	3
-4498	2020-02-28 16:16:45	user is satisfied	AWLT46A9EWTK8	3
-4499	2020-02-28 16:16:46	task completed	AWLT46A9EWTK8	3
 4500	2020-02-28 16:16:51	user queries subtopic 38 with: harvard finances	A2T7VIFQS647LC	1
 4501	2020-02-28 16:16:51	engine returns: 636	A2T7VIFQS647LC	1
 4502	2020-02-28 16:16:57	users judges paragraph 636 relevant	A2T7VIFQS647LC	1
@@ -3940,7 +3930,6 @@ id	timestamp	content	user	topic
 4775	2020-02-28 16:22:41	engine returns: 371	AHEEMGVMGEMEQ	10
 4776	2020-02-28 16:22:42	user queries subtopic 62 with: immune system components	A2T7VIFQS647LC	7
 4777	2020-02-28 16:22:42	engine returns: 801	A2T7VIFQS647LC	7
-4778	2020-02-28 16:22:46	topic 2 is assigned to the user	A3GITKS8VABUNB	2
 4779	2020-02-28 16:22:47	users judges paragraph 607 relevant	A3908297ZI3LES	4
 4780	2020-02-28 16:22:52	engine returns: 301	A171UXH8M8F6HS	8
 4781	2020-02-28 16:22:52	user queries subtopic 46 with: oxygen storage	A171UXH8M8F6HS	8
@@ -3952,7 +3941,6 @@ id	timestamp	content	user	topic
 4788	2020-02-28 16:22:58	user queries subtopic 33 with: military history normans	AMG800JQZGS2E	9
 4789	2020-02-28 16:22:58	engine returns: 699	A1ESQQT4HBLB52	6
 4790	2020-02-28 16:22:58	user queries subtopic 12 with: Global economic inequality	A1ESQQT4HBLB52	6
-4791	2020-02-28 16:23:00	task started	A3GITKS8VABUNB	2
 4792	2020-02-28 16:23:02	users judges paragraph 301 relevant	A171UXH8M8F6HS	8
 4794	2020-02-28 16:23:03	users judges paragraph 371 relevant	A2Y0WNHMT4PZ4C	10
 4795	2020-02-28 16:23:04	users judges paragraph 8 relevant	AMG800JQZGS2E	9
@@ -4060,7 +4048,6 @@ id	timestamp	content	user	topic
 4911	2020-02-28 16:24:39	task completed	A171UXH8M8F6HS	8
 4912	2020-02-28 16:24:40	user queries subtopic 15 with: global economic inequality	A39GADIK8RLMVC	6
 4913	2020-02-28 16:24:40	engine returns: 699	A39GADIK8RLMVC	6
-4914	2020-02-28 16:24:40	topic read	A3GITKS8VABUNB	2
 4915	2020-02-28 16:24:40	users judges paragraph 2 relevant	AMG800JQZGS2E	9
 4916	2020-02-28 16:24:43	engine returns: 689	ARVO22MUH1FUZ	6
 4917	2020-02-28 16:24:44	user queries subtopic 13 with: economic inequality	ARVO22MUH1FUZ	6
@@ -4172,7 +4159,6 @@ id	timestamp	content	user	topic
 5025	2020-02-28 16:26:40	user queries subtopic 29 with: black death geographical spread	A2C84POENS2UNY	2
 5026	2020-02-28 16:26:40	engine returns: 474	A2C84POENS2UNY	2
 5027	2020-02-28 16:26:40	task started	A2T7VIFQS647LC	8
-5028	2020-02-28 16:26:41	search started	A3GITKS8VABUNB	2
 5029	2020-02-28 16:26:42	satisfaction question started	AHEEMGVMGEMEQ	10
 5030	2020-02-28 16:26:43	users judges paragraph 474 relevant	A2C84POENS2UNY	2
 5031	2020-02-28 16:26:49	user queries subtopic 13 with: history of economic inequality	ARVO22MUH1FUZ	6
@@ -4188,8 +4174,6 @@ id	timestamp	content	user	topic
 5041	2020-02-28 16:26:57	engine returns: 483	A2C84POENS2UNY	2
 5042	2020-02-28 16:26:57	user queries subtopic 30 with: black death transmission	A2C84POENS2UNY	2
 5043	2020-02-28 16:26:59	users judges paragraph 483 irrelevant	A2C84POENS2UNY	2
-5044	2020-02-28 16:27:03	user queries subtopic 28 with: BLACK DEATH	A3GITKS8VABUNB	2
-5045	2020-02-28 16:27:04	engine returns: 474	A3GITKS8VABUNB	2
 5046	2020-02-28 16:27:07	user queries subtopic 32 with: black death research	A2C84POENS2UNY	2
 5047	2020-02-28 16:27:07	engine returns: 487	A2C84POENS2UNY	2
 5048	2020-02-28 16:27:10	users judges paragraph 487 relevant	A2C84POENS2UNY	2
@@ -4220,7 +4204,6 @@ id	timestamp	content	user	topic
 5073	2020-02-28 16:27:44	engine returns: 283	A2T7VIFQS647LC	8
 5074	2020-02-28 16:27:47	users judges paragraph 283 relevant	A2T7VIFQS647LC	8
 5075	2020-02-28 16:27:50	task started	A1BNGJBEWJS8WE	9
-5076	2020-02-28 16:27:51	users judges paragraph 474 relevant	A3GITKS8VABUNB	2
 5077	2020-02-28 16:27:51	users judges paragraph 813 irrelevant	A2K08PIXXDQLU0	7
 5078	2020-02-28 16:27:53	users judges paragraph 850 relevant	ALV4DAF8DIJ37	3
 5079	2020-02-28 16:28:01	user queries subtopic 43 with: oxygen charcteristics	A2T7VIFQS647LC	8
@@ -4228,8 +4211,6 @@ id	timestamp	content	user	topic
 5081	2020-02-28 16:28:01	topic 1 is assigned to the user	A3O5RKGH6VB19C	1
 5082	2020-02-28 16:28:05	task started	A3O5RKGH6VB19C	1
 5083	2020-02-28 16:28:07	search started	A30PFSEW4E2ZO8	10
-5084	2020-02-28 16:28:07	user queries subtopic 28 with: BLACK DEATH	A3GITKS8VABUNB	2
-5085	2020-02-28 16:28:07	engine returns: 474	A3GITKS8VABUNB	2
 5086	2020-02-28 16:28:07	user queries subtopic 63 with: immune deficiencies	A2K08PIXXDQLU0	7
 5087	2020-02-28 16:28:07	engine returns: 829	A2K08PIXXDQLU0	7
 5088	2020-02-28 16:28:11	user queries subtopic 54 with: countries that use European union	AQOUDUI0O8CI0	11
@@ -4639,21 +4620,15 @@ id	timestamp	content	user	topic
 5521	2020-02-28 16:41:36	user is satisfied	A2O2Y99RA9GFUJ	10
 5522	2020-02-28 16:41:36	task completed	A2O2Y99RA9GFUJ	10
 5523	2020-02-28 16:41:51	users judges paragraph 353 relevant	A2T7VIFQS647LC	11
-5524	2020-02-28 16:42:03	topic 2 is assigned to the user	A3GITKS8VABUNB	2
-5526	2020-02-28 16:42:06	task started	A3GITKS8VABUNB	2
 5527	2020-02-28 16:42:07	user queries subtopic 57 with: European Union Law reform	A2T7VIFQS647LC	11
 5528	2020-02-28 16:42:07	engine returns: 336	A2T7VIFQS647LC	11
 5531	2020-02-28 16:42:13	users judges paragraph 336 relevant	A2T7VIFQS647LC	11
-5532	2020-02-28 16:42:14	topic read	A3GITKS8VABUNB	2
-5533	2020-02-28 16:42:19	search started	A3GITKS8VABUNB	2
 5534	2020-02-28 16:42:33	user queries subtopic 58 with: European Union Law origin	A2T7VIFQS647LC	11
 5535	2020-02-28 16:42:33	engine returns: 353	A2T7VIFQS647LC	11
 5536	2020-02-28 16:42:42	users judges paragraph 353 relevant	A2T7VIFQS647LC	11
 5541	2020-02-28 16:43:00	user queries subtopic 60 with: European Union Law articles	A2T7VIFQS647LC	11
 5542	2020-02-28 16:43:00	engine returns: 337	A2T7VIFQS647LC	11
 5544	2020-02-28 16:43:08	users judges paragraph 337 relevant	A2T7VIFQS647LC	11
-5546	2020-02-28 16:43:17	user queries subtopic 29 with: BLACK DEATH	A3GITKS8VABUNB	2
-5547	2020-02-28 16:43:17	engine returns: 474	A3GITKS8VABUNB	2
 5548	2020-02-28 16:43:19	user queries subtopic 59 with: European Union Law charter	A2T7VIFQS647LC	11
 5549	2020-02-28 16:43:19	engine returns: 353	A2T7VIFQS647LC	11
 5550	2020-02-28 16:43:25	users judges paragraph 353 relevant	A2T7VIFQS647LC	11
@@ -4675,24 +4650,17 @@ id	timestamp	content	user	topic
 5570	2020-02-28 16:44:47	topic read	A2I43BDUPAM00C	6
 5571	2020-02-28 16:44:58	search started	A3HCGNV93TJO7R	3
 5572	2020-02-28 16:45:21	search started	A2I43BDUPAM00C	6
-5573	2020-02-28 16:45:25	users judges paragraph 474 relevant	A3GITKS8VABUNB	2
 5574	2020-02-28 16:45:33	user queries subtopic 67 with: IPCC	A3HCGNV93TJO7R	3
 5575	2020-02-28 16:45:33	engine returns: 852	A3HCGNV93TJO7R	3
 5576	2020-02-28 16:45:40	users judges paragraph 332 irrelevant	A22BBAU24IEHPL	10
 5577	2020-02-28 16:45:43	topic read	A1FQK51ECARQNK	7
 5578	2020-02-28 16:45:45	topic 6 is assigned to the user	A1KHRQ121JTDF6	6
-5579	2020-02-28 16:45:46	user queries subtopic 29 with: BLACK DEATH	A3GITKS8VABUNB	2
-5580	2020-02-28 16:45:47	engine returns: 474	A3GITKS8VABUNB	2
 5581	2020-02-28 16:45:53	task started	A1KHRQ121JTDF6	6
-5582	2020-02-28 16:45:54	users judges paragraph 474 relevant	A3GITKS8VABUNB	2
 5585	2020-02-28 16:46:01	engine returns: 699	A2I43BDUPAM00C	6
 5586	2020-02-28 16:46:01	user queries subtopic 12 with: Historical economic inequality	A2I43BDUPAM00C	6
 5587	2020-02-28 16:46:03	topic 5 is assigned to the user	AQOUDUI0O8CI0	5
 5588	2020-02-28 16:46:03	users judges paragraph 852 relevant	A3HCGNV93TJO7R	3
-5589	2020-02-28 16:46:05	satisfaction question started	A3GITKS8VABUNB	2
 5590	2020-02-28 16:46:06	task started	AQOUDUI0O8CI0	5
-5591	2020-02-28 16:46:09	user is satisfied	A3GITKS8VABUNB	2
-5592	2020-02-28 16:46:09	task completed	A3GITKS8VABUNB	2
 5593	2020-02-28 16:46:12	topic read	A1KHRQ121JTDF6	6
 5594	2020-02-28 16:46:14	topic read	AQOUDUI0O8CI0	5
 5597	2020-02-28 16:46:23	search started	A1KHRQ121JTDF6	6
@@ -4780,9 +4748,7 @@ id	timestamp	content	user	topic
 5692	2020-02-28 16:50:01	topic read	ADOA6CWS9LA9	2
 5693	2020-02-28 16:50:01	users judges paragraph 699 irrelevant	A196XR61DIW5GU	6
 5694	2020-02-28 16:50:04	users judges paragraph 331 relevant	A22BBAU24IEHPL	11
-5695	2020-02-28 16:50:05	topic 6 is assigned to the user	A3GITKS8VABUNB	6
 5696	2020-02-28 16:50:07	users judges paragraph 859 relevant	A3HCGNV93TJO7R	3
-5697	2020-02-28 16:50:08	task started	A3GITKS8VABUNB	6
 5698	2020-02-28 16:50:17	users judges paragraph 624 irrelevant	A3DSXUOWWOT30T	1
 5699	2020-02-28 16:50:19	user queries subtopic 18 with: private school	A3EVRS5DB4TE1A	4
 5700	2020-02-28 16:50:19	engine returns: 607	A3EVRS5DB4TE1A	4
@@ -4795,7 +4761,6 @@ id	timestamp	content	user	topic
 5709	2020-02-28 16:50:32	topic 10 is assigned to the user	A3SOVL9RH7YBCX	10
 5710	2020-02-28 16:50:33	engine returns: 853	A3HCGNV93TJO7R	3
 5711	2020-02-28 16:50:33	user queries subtopic 70 with: Ipcc funding	A3HCGNV93TJO7R	3
-5712	2020-02-28 16:50:34	topic read	A3GITKS8VABUNB	6
 5713	2020-02-28 16:50:35	user queries subtopic 38 with: havard univesity costs	A3DSXUOWWOT30T	1
 5714	2020-02-28 16:50:35	engine returns: 624	A3DSXUOWWOT30T	1
 5715	2020-02-28 16:50:36	task started	A3SOVL9RH7YBCX	10
@@ -4803,7 +4768,6 @@ id	timestamp	content	user	topic
 5718	2020-02-28 16:50:44	users judges paragraph 624 irrelevant	A3DSXUOWWOT30T	1
 5719	2020-02-28 16:50:45	topic read	A3SOVL9RH7YBCX	10
 5720	2020-02-28 16:50:48	topic read	A10VYI35ULRJC8	4
-5721	2020-02-28 16:50:50	search started	A3GITKS8VABUNB	6
 5722	2020-02-28 16:50:51	engine returns: 675	A196XR61DIW5GU	6
 5723	2020-02-28 16:50:51	user queries subtopic 16 with: Economic Inequality cause	A196XR61DIW5GU	6
 5724	2020-02-28 16:50:54	user queries subtopic 28 with: bubonic plague	A1YGF0LJJGB30G	2
@@ -4825,8 +4789,6 @@ id	timestamp	content	user	topic
 5744	2020-02-28 16:51:32	users judges paragraph 475 relevant	A1YGF0LJJGB30G	2
 5745	2020-02-28 16:51:33	engine returns: 852	A3HCGNV93TJO7R	3
 5746	2020-02-28 16:51:33	user queries subtopic 67 with: Ipcc facts	A3HCGNV93TJO7R	3
-5747	2020-02-28 16:51:36	user queries subtopic 13 with: Economic Inequality	A3GITKS8VABUNB	6
-5748	2020-02-28 16:51:36	engine returns: 689	A3GITKS8VABUNB	6
 5749	2020-02-28 16:51:37	search started	ADOA6CWS9LA9	2
 5750	2020-02-28 16:51:38	users judges paragraph 852 relevant	A3HCGNV93TJO7R	3
 5751	2020-02-28 16:51:46	satisfaction question started	A3HCGNV93TJO7R	3
@@ -4854,17 +4816,10 @@ id	timestamp	content	user	topic
 5776	2020-02-28 16:52:54	search started	A22BBAU24IEHPL	10
 5777	2020-02-28 16:53:00	topic 8 is assigned to the user	A1KHRQ121JTDF6	8
 5778	2020-02-28 16:53:02	task started	A1KHRQ121JTDF6	8
-5779	2020-02-28 16:53:02	users judges paragraph 689 relevant	A3GITKS8VABUNB	6
 5781	2020-02-28 16:53:08	user queries subtopic 32 with: bubonic plague today	A1YGF0LJJGB30G	2
 5782	2020-02-28 16:53:08	engine returns: 487	A1YGF0LJJGB30G	2
 5783	2020-02-28 16:53:08	engine returns: 474	ADOA6CWS9LA9	2
 5784	2020-02-28 16:53:08	user queries subtopic 28 with: black death	ADOA6CWS9LA9	2
-5785	2020-02-28 16:53:10	user queries subtopic 13 with: Economic Inequality	A3GITKS8VABUNB	6
-5786	2020-02-28 16:53:10	engine returns: 689	A3GITKS8VABUNB	6
-5787	2020-02-28 16:53:13	users judges paragraph 689 relevant	A3GITKS8VABUNB	6
-5788	2020-02-28 16:53:18	satisfaction question started	A3GITKS8VABUNB	6
-5789	2020-02-28 16:53:21	user is satisfied	A3GITKS8VABUNB	6
-5790	2020-02-28 16:53:21	task completed	A3GITKS8VABUNB	6
 5791	2020-02-28 16:53:22	users judges paragraph 474 relevant	ADOA6CWS9LA9	2
 5792	2020-02-28 16:53:24	topic 8 is assigned to the user	A1CC1ESUM2JWJ2	8
 5793	2020-02-28 16:53:28	topic 5 is assigned to the user	ARVO22MUH1FUZ	5
@@ -4976,10 +4931,8 @@ id	timestamp	content	user	topic
 5903	2020-02-28 16:55:58	user queries subtopic 1 with: The history of Amazon Rainforest	A22BBAU24IEHPL	10
 5904	2020-02-28 16:55:58	engine returns: 374	A22BBAU24IEHPL	10
 5905	2020-02-28 16:56:01	topic 7 is assigned to the user	A22IIMLQ7K4B3M	7
-5906	2020-02-28 16:56:02	topic 4 is assigned to the user	A3GITKS8VABUNB	4
 5908	2020-02-28 16:56:02	users judges paragraph 831 relevant	A1FQK51ECARQNK	7
 5909	2020-02-28 16:56:02	task started	A22IIMLQ7K4B3M	7
-5911	2020-02-28 16:56:05	task started	A3GITKS8VABUNB	4
 5912	2020-02-28 16:56:06	topic read	A22IIMLQ7K4B3M	7
 5913	2020-02-28 16:56:07	satisfaction question started	A1YGF0LJJGB30G	2
 5914	2020-02-28 16:56:09	task completed	A1YGF0LJJGB30G	2
@@ -4994,10 +4947,8 @@ id	timestamp	content	user	topic
 5923	2020-02-28 16:56:14	user is satisfied	A1FQK51ECARQNK	7
 5924	2020-02-28 16:56:14	task completed	A1FQK51ECARQNK	7
 5925	2020-02-28 16:56:16	users judges paragraph 286 irrelevant	A1CC1ESUM2JWJ2	8
-5926	2020-02-28 16:56:16	topic read	A3GITKS8VABUNB	4
 5927	2020-02-28 16:56:17	user queries subtopic 6 with: formation of rocks	ARVO22MUH1FUZ	5
 5928	2020-02-28 16:56:17	engine returns: 496	ARVO22MUH1FUZ	5
-5929	2020-02-28 16:56:19	search started	A3GITKS8VABUNB	4
 5930	2020-02-28 16:56:20	users judges paragraph 496 irrelevant	ARVO22MUH1FUZ	5
 5932	2020-02-28 16:56:23	task started	A1XWT5Q5HGYR12	4
 5933	2020-02-28 16:56:24	user queries subtopic 61 with: Basic facts about the immune system	A22IIMLQ7K4B3M	7
@@ -5007,8 +4958,6 @@ id	timestamp	content	user	topic
 5941	2020-02-28 16:56:33	engine returns: 294	A1CC1ESUM2JWJ2	8
 5942	2020-02-28 16:56:34	user queries subtopic 9 with: about geology	ARVO22MUH1FUZ	5
 5943	2020-02-28 16:56:34	engine returns: 521	ARVO22MUH1FUZ	5
-5944	2020-02-28 16:56:35	user queries subtopic 18 with: Private Schools	A3GITKS8VABUNB	4
-5945	2020-02-28 16:56:36	engine returns: 607	A3GITKS8VABUNB	4
 5946	2020-02-28 16:56:36	user queries subtopic 22 with: benefits of private school and it essential qualities compared to a public school	A10VYI35ULRJC8	4
 5947	2020-02-28 16:56:36	engine returns: 600	A10VYI35ULRJC8	4
 5948	2020-02-28 16:56:40	users judges paragraph 294 irrelevant	A1CC1ESUM2JWJ2	8
@@ -5022,18 +4971,13 @@ id	timestamp	content	user	topic
 5956	2020-02-28 16:56:56	engine returns: 483	ADOA6CWS9LA9	2
 5957	2020-02-28 16:56:57	user queries subtopic 5 with: Everything you need to know about Amazon Rainforest	A22BBAU24IEHPL	10
 5958	2020-02-28 16:56:57	engine returns: 371	A22BBAU24IEHPL	10
-5959	2020-02-28 16:57:04	topic 11 is assigned to the user	A6KB4VHCZYTY2	11
 5960	2020-02-28 16:57:05	users judges paragraph 483 irrelevant	ADOA6CWS9LA9	2
 5961	2020-02-28 16:57:10	users judges paragraph 850 relevant	ASUYD8BPYM85M	3
-5962	2020-02-28 16:57:12	task started	A6KB4VHCZYTY2	11
-5963	2020-02-28 16:57:19	topic read	A6KB4VHCZYTY2	11
 5964	2020-02-28 16:57:21	users judges paragraph 371 irrelevant	A22BBAU24IEHPL	10
 5965	2020-02-28 16:57:22	users judges paragraph 600 relevant	A10VYI35ULRJC8	4
-5967	2020-02-28 16:57:24	search started	A6KB4VHCZYTY2	11
 5968	2020-02-28 16:57:25	engine returns: 852	ASUYD8BPYM85M	3
 5969	2020-02-28 16:57:25	user queries subtopic 67 with: IPCC	ASUYD8BPYM85M	3
 5971	2020-02-28 16:57:34	topic read	A1XWT5Q5HGYR12	4
-5972	2020-02-28 16:57:36	satisfaction question started	A6KB4VHCZYTY2	11
 5974	2020-02-28 16:57:44	topic 3 is assigned to the user	A2Q4Z6CADBW6WD	3
 5975	2020-02-28 16:57:47	task started	A2Q4Z6CADBW6WD	3
 5976	2020-02-28 16:57:47	users judges paragraph 852 relevant	ASUYD8BPYM85M	3
@@ -5045,15 +4989,10 @@ id	timestamp	content	user	topic
 5982	2020-02-28 16:57:55	engine returns: 853	ASUYD8BPYM85M	3
 5984	2020-02-28 16:57:57	users judges paragraph 371 irrelevant	A22BBAU24IEHPL	10
 5985	2020-02-28 16:57:58	users judges paragraph 474 relevant	ADOA6CWS9LA9	2
-5987	2020-02-28 16:57:59	user queries subtopic 58 with: weather	A6KB4VHCZYTY2	11
-5988	2020-02-28 16:57:59	engine returns: 353	A6KB4VHCZYTY2	11
 5989	2020-02-28 16:58:01	topic read	A2Q4Z6CADBW6WD	3
-5991	2020-02-28 16:58:06	users judges paragraph 353 relevant	A6KB4VHCZYTY2	11
 5992	2020-02-28 16:58:07	users judges paragraph 853 relevant	ASUYD8BPYM85M	3
 5993	2020-02-28 16:58:08	topic 9 is assigned to the user	A1HF64TV3AAOK6	9
 5996	2020-02-28 16:58:16	task started	A1HF64TV3AAOK6	9
-5997	2020-02-28 16:58:17	user is satisfied	A6KB4VHCZYTY2	11
-5998	2020-02-28 16:58:17	task completed	A6KB4VHCZYTY2	11
 5999	2020-02-28 16:58:18	search started	A2Q4Z6CADBW6WD	3
 6000	2020-02-28 16:58:19	satisfaction question started	A10VYI35ULRJC8	4
 6002	2020-02-28 16:58:21	user queries subtopic 71 with: IPCC publications	ASUYD8BPYM85M	3
@@ -5077,18 +5016,14 @@ id	timestamp	content	user	topic
 6023	2020-02-28 16:58:51	users judges paragraph 852 relevant	A2Q4Z6CADBW6WD	3
 6024	2020-02-28 16:58:52	user queries subtopic 69 with: IPCC activities	ASUYD8BPYM85M	3
 6025	2020-02-28 16:58:52	engine returns: 860	ASUYD8BPYM85M	3
-6026	2020-02-28 16:58:52	users judges paragraph 607 relevant	A3GITKS8VABUNB	4
 6027	2020-02-28 16:58:56	users judges paragraph 487 relevant	ADOA6CWS9LA9	2
 6029	2020-02-28 16:59:02	user queries subtopic 7 with: Geology wiki	A22BBAU24IEHPL	5
 6030	2020-02-28 16:59:03	engine returns: 521	A22BBAU24IEHPL	5
-6031	2020-02-28 16:59:05	user queries subtopic 18 with: Private Schools	A3GITKS8VABUNB	4
-6032	2020-02-28 16:59:05	engine returns: 607	A3GITKS8VABUNB	4
 6033	2020-02-28 16:59:05	user queries subtopic 69 with: Intergovernmental Panel on Climate Change activities	A2Q4Z6CADBW6WD	3
 6034	2020-02-28 16:59:05	engine returns: 860	A2Q4Z6CADBW6WD	3
 6035	2020-02-28 16:59:06	users judges paragraph 860 relevant	ASUYD8BPYM85M	3
 6036	2020-02-28 16:59:09	users judges paragraph 860 relevant	A2Q4Z6CADBW6WD	3
 6037	2020-02-28 16:59:12	search started	A1HF64TV3AAOK6	9
-6038	2020-02-28 16:59:18	users judges paragraph 607 relevant	A3GITKS8VABUNB	4
 6039	2020-02-28 16:59:21	user queries subtopic 68 with: IPCC meetings	ASUYD8BPYM85M	3
 6040	2020-02-28 16:59:21	engine returns: 852	ASUYD8BPYM85M	3
 6041	2020-02-28 16:59:21	engine returns: 480	ADOA6CWS9LA9	2
@@ -5099,14 +5034,11 @@ id	timestamp	content	user	topic
 6048	2020-02-28 16:59:28	users judges paragraph 852 relevant	ASUYD8BPYM85M	3
 6049	2020-02-28 16:59:30	users judges paragraph 859 relevant	A2Q4Z6CADBW6WD	3
 6050	2020-02-28 16:59:31	satisfaction question started	ASUYD8BPYM85M	3
-6051	2020-02-28 16:59:32	satisfaction question started	A3GITKS8VABUNB	4
 6052	2020-02-28 16:59:34	user is satisfied	ASUYD8BPYM85M	3
 6053	2020-02-28 16:59:34	task completed	ASUYD8BPYM85M	3
 6054	2020-02-28 16:59:35	engine returns: 600	A1XWT5Q5HGYR12	4
 6055	2020-02-28 16:59:35	user queries subtopic 22 with: difference between public and private schools	A1XWT5Q5HGYR12	4
 6056	2020-02-28 16:59:37	satisfaction question started	ADOA6CWS9LA9	2
-6057	2020-02-28 16:59:38	user is satisfied	A3GITKS8VABUNB	4
-6058	2020-02-28 16:59:38	task completed	A3GITKS8VABUNB	4
 6059	2020-02-28 16:59:39	user queries subtopic 34 with: history of Normans	A1HF64TV3AAOK6	9
 6060	2020-02-28 16:59:39	engine returns: 1	A1HF64TV3AAOK6	9
 6062	2020-02-28 16:59:46	user queries subtopic 70 with: Intergovernmental Panel on Climate Change funding	A2Q4Z6CADBW6WD	3
@@ -5130,12 +5062,8 @@ id	timestamp	content	user	topic
 6082	2020-02-28 17:00:31	users judges paragraph 600 relevant	A1XWT5Q5HGYR12	4
 6084	2020-02-28 17:00:34	topic read	A22BBAU24IEHPL	7
 6085	2020-02-28 17:00:36	search started	A22BBAU24IEHPL	7
-6086	2020-02-28 17:00:36	topic 10 is assigned to the user	A3GITKS8VABUNB	10
-6087	2020-02-28 17:00:39	task started	A3GITKS8VABUNB	10
-6088	2020-02-28 17:00:49	topic read	A3GITKS8VABUNB	10
 6089	2020-02-28 17:00:53	user queries subtopic 61 with: Immune system basic fact	A22BBAU24IEHPL	7
 6090	2020-02-28 17:00:53	engine returns: 801	A22BBAU24IEHPL	7
-6091	2020-02-28 17:00:54	search started	A3GITKS8VABUNB	10
 6092	2020-02-28 17:00:56	topic 2 is assigned to the user	A2QDLFKBP4F1TT	2
 6093	2020-02-28 17:00:58	user queries subtopic 18 with: how much do private schools cost	A1XWT5Q5HGYR12	4
 6094	2020-02-28 17:00:58	engine returns: 607	A1XWT5Q5HGYR12	4
@@ -5143,8 +5071,6 @@ id	timestamp	content	user	topic
 6096	2020-02-28 17:00:58	task started	A2QDLFKBP4F1TT	2
 6097	2020-02-28 17:00:59	users judges paragraph 801 relevant	A22BBAU24IEHPL	7
 6099	2020-02-28 17:01:07	users judges paragraph 607 relevant	A1XWT5Q5HGYR12	4
-6100	2020-02-28 17:01:08	user queries subtopic 1 with: Amazon Rainforest	A3GITKS8VABUNB	10
-6101	2020-02-28 17:01:08	engine returns: 374	A3GITKS8VABUNB	10
 6102	2020-02-28 17:01:11	user queries subtopic 36 with: Norman rulers	A1HF64TV3AAOK6	9
 6103	2020-02-28 17:01:11	engine returns: 2	A1HF64TV3AAOK6	9
 6104	2020-02-28 17:01:18	users judges paragraph 2 irrelevant	A1HF64TV3AAOK6	9
@@ -5205,10 +5131,6 @@ id	timestamp	content	user	topic
 6159	2020-02-28 17:03:26	topic read	A22BBAU24IEHPL	9
 6160	2020-02-28 17:03:26	users judges paragraph 17 relevant	A1HF64TV3AAOK6	9
 6161	2020-02-28 17:03:28	search started	A22BBAU24IEHPL	9
-6162	2020-02-28 17:03:29	users judges paragraph 374 relevant	A3GITKS8VABUNB	10
-6163	2020-02-28 17:03:33	satisfaction question started	A3GITKS8VABUNB	10
-6164	2020-02-28 17:03:38	user is satisfied	A3GITKS8VABUNB	10
-6165	2020-02-28 17:03:38	task completed	A3GITKS8VABUNB	10
 6166	2020-02-28 17:03:46	engine returns: 1	A22BBAU24IEHPL	9
 6167	2020-02-28 17:03:46	user queries subtopic 34 with: Normans basic facts	A22BBAU24IEHPL	9
 6168	2020-02-28 17:03:48	users judges paragraph 1 relevant	A22BBAU24IEHPL	9
@@ -5334,18 +5256,12 @@ id	timestamp	content	user	topic
 6295	2020-02-28 17:09:41	user is satisfied	A3C2X1L5PVNNLV	5
 6296	2020-02-28 17:09:42	task completed	A3C2X1L5PVNNLV	5
 6297	2020-02-28 17:09:44	users judges paragraph 499 irrelevant	A3JZLYQ606HJJR	5
-6299	2020-02-28 17:09:51	topic 3 is assigned to the user	A3GITKS8VABUNB	3
-6301	2020-02-28 17:09:54	task started	A3GITKS8VABUNB	3
 6302	2020-02-28 17:10:03	user queries subtopic 8 with: geology	A3JZLYQ606HJJR	5
 6303	2020-02-28 17:10:03	engine returns: 501	A3JZLYQ606HJJR	5
-6304	2020-02-28 17:10:07	topic read	A3GITKS8VABUNB	3
 6305	2020-02-28 17:10:08	users judges paragraph 501 relevant	A3JZLYQ606HJJR	5
-6306	2020-02-28 17:10:10	search started	A3GITKS8VABUNB	3
 6307	2020-02-28 17:10:14	satisfaction question started	A3JZLYQ606HJJR	5
 6308	2020-02-28 17:10:17	user is satisfied	A3JZLYQ606HJJR	5
 6309	2020-02-28 17:10:17	task completed	A3JZLYQ606HJJR	5
-6310	2020-02-28 17:10:31	user queries subtopic 68 with: Intergovernmental Panel on Climate Change	A3GITKS8VABUNB	3
-6311	2020-02-28 17:10:31	engine returns: 852	A3GITKS8VABUNB	3
 6312	2020-02-28 17:11:08	topic 2 is assigned to the user	ARVO22MUH1FUZ	2
 6313	2020-02-28 17:11:11	task started	ARVO22MUH1FUZ	2
 6314	2020-02-28 17:11:23	topic 1 is assigned to the user	AQOUDUI0O8CI0	1
@@ -5373,11 +5289,7 @@ id	timestamp	content	user	topic
 6342	2020-02-28 17:13:41	engine returns: 474	ARVO22MUH1FUZ	2
 6343	2020-02-28 17:13:44	user queries subtopic 41 with: harvard founding	AQOUDUI0O8CI0	1
 6344	2020-02-28 17:13:44	engine returns: 622	AQOUDUI0O8CI0	1
-6345	2020-02-28 17:13:44	users judges paragraph 852 relevant	A3GITKS8VABUNB	3
 6346	2020-02-28 17:13:44	task started	A345VDWYMDWTGD	4
-6348	2020-02-28 17:13:48	satisfaction question started	A3GITKS8VABUNB	3
-6349	2020-02-28 17:13:50	user is satisfied	A3GITKS8VABUNB	3
-6350	2020-02-28 17:13:50	task completed	A3GITKS8VABUNB	3
 6351	2020-02-28 17:13:56	users judges paragraph 622 relevant	AQOUDUI0O8CI0	1
 6352	2020-02-28 17:13:59	topic 2 is assigned to the user	A1BUBB41AO8TZ9	2
 6353	2020-02-28 17:14:02	users judges paragraph 474 relevant	ARVO22MUH1FUZ	2
@@ -5531,17 +5443,11 @@ id	timestamp	content	user	topic
 6504	2020-02-28 17:26:58	search started	AXAF4OJOJ4P6I	1
 6505	2020-02-28 17:27:00	users judges paragraph 860 relevant	A3UPAXLDS67HKJ	3
 6506	2020-02-28 17:27:05	users judges paragraph 371 irrelevant	A1LRJ4U04532TM	10
-6507	2020-02-28 17:27:08	topic 1 is assigned to the user	A3GITKS8VABUNB	1
-6508	2020-02-28 17:27:11	task started	A3GITKS8VABUNB	1
 6509	2020-02-28 17:27:11	user queries subtopic 70 with: IPCC funding	A3UPAXLDS67HKJ	3
 6510	2020-02-28 17:27:11	engine returns: 853	A3UPAXLDS67HKJ	3
-6511	2020-02-28 17:27:18	topic read	A3GITKS8VABUNB	1
-6512	2020-02-28 17:27:24	search started	A3GITKS8VABUNB	1
 6515	2020-02-28 17:27:38	engine returns: 386	A1LRJ4U04532TM	10
 6516	2020-02-28 17:27:38	user queries subtopic 4 with: Changes over last 10 years in Amazon rainforest	A1LRJ4U04532TM	10
 6517	2020-02-28 17:27:39	search started	A1NCSZCN8EA787	6
-6518	2020-02-28 17:27:41	engine returns: 644	A3GITKS8VABUNB	1
-6519	2020-02-28 17:27:41	user queries subtopic 39 with: Harvard University	A3GITKS8VABUNB	1
 6520	2020-02-28 17:27:42	users judges paragraph 853 relevant	A3UPAXLDS67HKJ	3
 6521	2020-02-28 17:27:47	users judges paragraph 386 relevant	A1LRJ4U04532TM	10
 6525	2020-02-28 17:27:56	engine returns: 632	AXAF4OJOJ4P6I	1
@@ -5591,18 +5497,11 @@ id	timestamp	content	user	topic
 6576	2020-02-28 17:31:41	user queries subtopic 67 with: Intergovernmental Panel on Climate Change	A2JTSH1VPJQ8FR	3
 6577	2020-02-28 17:31:42	topic 6 is assigned to the user	AXAF4OJOJ4P6I	6
 6578	2020-02-28 17:31:46	task started	AXAF4OJOJ4P6I	6
-6579	2020-02-28 17:31:47	users judges paragraph 644 irrelevant	A3GITKS8VABUNB	1
 6580	2020-02-28 17:32:01	users judges paragraph 860 relevant	A36A780ODXBDEH	3
-6581	2020-02-28 17:32:03	user queries subtopic 39 with: Harvard University	A3GITKS8VABUNB	1
-6582	2020-02-28 17:32:03	engine returns: 644	A3GITKS8VABUNB	1
-6584	2020-02-28 17:32:08	users judges paragraph 644 irrelevant	A3GITKS8VABUNB	1
 6585	2020-02-28 17:32:11	topic read	AXAF4OJOJ4P6I	6
 6586	2020-02-28 17:32:12	user queries subtopic 70 with: IPCC Funding	A36A780ODXBDEH	3
 6587	2020-02-28 17:32:12	engine returns: 853	A36A780ODXBDEH	3
 6588	2020-02-28 17:32:13	search started	AXAF4OJOJ4P6I	6
-6589	2020-02-28 17:32:13	satisfaction question started	A3GITKS8VABUNB	1
-6590	2020-02-28 17:32:15	user is unsatisfied	A3GITKS8VABUNB	1
-6591	2020-02-28 17:32:15	task completed	A3GITKS8VABUNB	1
 6592	2020-02-28 17:32:18	topic 11 is assigned to the user	A3DSXUOWWOT30T	11
 6593	2020-02-28 17:32:22	task started	A3DSXUOWWOT30T	11
 6594	2020-02-28 17:32:23	engine returns: 521	A3J37RP5AZDACH	5
@@ -5617,13 +5516,9 @@ id	timestamp	content	user	topic
 6603	2020-02-28 17:32:55	users judges paragraph 850 relevant	A2JTSH1VPJQ8FR	3
 6604	2020-02-28 17:32:57	users judges paragraph 521 relevant	A3J37RP5AZDACH	5
 6605	2020-02-28 17:32:58	user queries subtopic 15 with: what is the current state of economic inequality	AXAF4OJOJ4P6I	6
-6606	2020-02-28 17:32:59	topic 8 is assigned to the user	A3GITKS8VABUNB	8
-6607	2020-02-28 17:33:02	task started	A3GITKS8VABUNB	8
 6608	2020-02-28 17:33:02	search started	A1YGF0LJJGB30G	9
 6609	2020-02-28 17:33:09	engine returns: 850	A2JTSH1VPJQ8FR	3
 6610	2020-02-28 17:33:09	user queries subtopic 67 with: Intergovernmental Panel on Climate Change	A2JTSH1VPJQ8FR	3
-6611	2020-02-28 17:33:14	topic read	A3GITKS8VABUNB	8
-6612	2020-02-28 17:33:16	search started	A3GITKS8VABUNB	8
 6613	2020-02-28 17:33:17	users judges paragraph 850 relevant	A2JTSH1VPJQ8FR	3
 6614	2020-02-28 17:33:17	user queries subtopic 34 with: Normans origins	A1YGF0LJJGB30G	9
 6615	2020-02-28 17:33:17	engine returns: 1	A1YGF0LJJGB30G	9
@@ -5631,8 +5526,6 @@ id	timestamp	content	user	topic
 6617	2020-02-28 17:33:20	user queries subtopic 71 with: IPCC publications	A36A780ODXBDEH	3
 6618	2020-02-28 17:33:20	engine returns: 859	A36A780ODXBDEH	3
 6619	2020-02-28 17:33:25	topic 3 is assigned to the user	AXAF4OJOJ4P6I	3
-6620	2020-02-28 17:33:27	engine returns: 286	A3GITKS8VABUNB	8
-6621	2020-02-28 17:33:27	user queries subtopic 44 with: Oxygen	A3GITKS8VABUNB	8
 6622	2020-02-28 17:33:27	user queries subtopic 6 with: Geology transformations	A3J37RP5AZDACH	5
 6623	2020-02-28 17:33:27	engine returns: 496	A3J37RP5AZDACH	5
 6624	2020-02-28 17:33:28	task started	AXAF4OJOJ4P6I	3
@@ -5692,14 +5585,10 @@ id	timestamp	content	user	topic
 6678	2020-02-28 17:38:00	users judges paragraph 8 relevant	A1YGF0LJJGB30G	9
 6679	2020-02-28 17:38:17	engine returns: 1	A1YGF0LJJGB30G	9
 6680	2020-02-28 17:38:17	user queries subtopic 36 with: Normans lineage	A1YGF0LJJGB30G	9
-6681	2020-02-28 17:38:27	users judges paragraph 286 irrelevant	A3GITKS8VABUNB	8
 6682	2020-02-28 17:38:27	users judges paragraph 1 irrelevant	A1YGF0LJJGB30G	9
 6683	2020-02-28 17:38:30	satisfaction question started	A1YGF0LJJGB30G	9
 6684	2020-02-28 17:38:33	user is satisfied	A1YGF0LJJGB30G	9
 6685	2020-02-28 17:38:33	task completed	A1YGF0LJJGB30G	9
-6686	2020-02-28 17:38:35	satisfaction question started	A3GITKS8VABUNB	8
-6687	2020-02-28 17:38:37	user is unsatisfied	A3GITKS8VABUNB	8
-6688	2020-02-28 17:38:37	task completed	A3GITKS8VABUNB	8
 6689	2020-02-28 17:39:30	topic 10 is assigned to the user	A1YGF0LJJGB30G	10
 6690	2020-02-28 17:39:34	task started	A1YGF0LJJGB30G	10
 6691	2020-02-28 17:39:53	topic read	A1YGF0LJJGB30G	10
@@ -5935,23 +5824,13 @@ id	timestamp	content	user	topic
 6928	2020-02-28 18:12:31	satisfaction question started	A1YGF0LJJGB30G	8
 6929	2020-02-28 18:12:33	user is unsatisfied	A1YGF0LJJGB30G	8
 6930	2020-02-28 18:12:33	task completed	A1YGF0LJJGB30G	8
-6931	2020-02-28 18:14:33	topic 5 is assigned to the user	A3GITKS8VABUNB	5
-6932	2020-02-28 18:14:36	task started	A3GITKS8VABUNB	5
-6933	2020-02-28 18:14:45	topic read	A3GITKS8VABUNB	5
-6934	2020-02-28 18:14:47	search started	A3GITKS8VABUNB	5
 6935	2020-02-28 18:15:04	topic 3 is assigned to the user	A1MFQBQRNANOD6	3
-6936	2020-02-28 18:15:15	user queries subtopic 7 with: Geology	A3GITKS8VABUNB	5
-6937	2020-02-28 18:15:16	engine returns: 521	A3GITKS8VABUNB	5
 6938	2020-02-28 18:15:17	task started	A1MFQBQRNANOD6	3
 6939	2020-02-28 18:16:29	topic read	A1MFQBQRNANOD6	3
 6941	2020-02-28 18:17:19	search started	A1MFQBQRNANOD6	3
 6945	2020-02-28 18:17:40	engine returns: 850	A1MFQBQRNANOD6	3
 6946	2020-02-28 18:17:40	user queries subtopic 67 with: Intergovernmental Panel on Climate Change	A1MFQBQRNANOD6	3
-6947	2020-02-28 18:18:20	users judges paragraph 521 irrelevant	A3GITKS8VABUNB	5
 6948	2020-02-28 18:18:23	users judges paragraph 850 relevant	A1MFQBQRNANOD6	3
-6949	2020-02-28 18:18:24	satisfaction question started	A3GITKS8VABUNB	5
-6950	2020-02-28 18:18:27	user is unsatisfied	A3GITKS8VABUNB	5
-6951	2020-02-28 18:18:27	task completed	A3GITKS8VABUNB	5
 6952	2020-02-28 18:18:28	user queries subtopic 67 with: Intergovernmental Panel on Climate Change	A1MFQBQRNANOD6	3
 6953	2020-02-28 18:18:29	engine returns: 850	A1MFQBQRNANOD6	3
 6954	2020-02-28 18:18:47	users judges paragraph 850 relevant	A1MFQBQRNANOD6	3
@@ -6155,16 +6034,6 @@ id	timestamp	content	user	topic
 7170	2020-02-28 19:20:56	satisfaction question started	ANJUS8CJFMNT7	4
 7171	2020-02-28 19:21:02	task completed	ANJUS8CJFMNT7	4
 7172	2020-02-28 19:21:02	user is satisfied	ANJUS8CJFMNT7	4
-7173	2020-02-28 19:29:56	topic 7 is assigned to the user	A3GITKS8VABUNB	7
-7174	2020-02-28 19:29:59	task started	A3GITKS8VABUNB	7
-7175	2020-02-28 19:30:17	topic read	A3GITKS8VABUNB	7
-7176	2020-02-28 19:30:18	search started	A3GITKS8VABUNB	7
-7179	2020-02-28 19:30:41	user queries subtopic 63 with: Immune System	A3GITKS8VABUNB	7
-7180	2020-02-28 19:30:41	engine returns: 813	A3GITKS8VABUNB	7
-7182	2020-02-28 19:37:06	users judges paragraph 813 irrelevant	A3GITKS8VABUNB	7
-7183	2020-02-28 19:37:20	satisfaction question started	A3GITKS8VABUNB	7
-7184	2020-02-28 19:37:47	user is unsatisfied	A3GITKS8VABUNB	7
-7185	2020-02-28 19:37:47	task completed	A3GITKS8VABUNB	7
 7193	2020-02-28 20:05:52	topic 9 is assigned to the user	A2GLSQQQE9UZA6	9
 7194	2020-02-28 20:05:56	task started	A2GLSQQQE9UZA6	9
 7195	2020-02-28 20:06:44	topic read	A2GLSQQQE9UZA6	9
