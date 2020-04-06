@@ -1,3 +1,4 @@
+import math
 import numpy as np
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
@@ -152,15 +153,66 @@ class InvertedIndex(Picklable):
         return Picklable.load(path + "/" + InvertedIndex.name + ".p")
 
 
-def language_model(tf, cf, cl, ld, mu=100):
-    return (tf + mu * cf / cl) / (mu + ld)
+class Scorer:
+    
+    def __init__(self):
+        self.args = {}
+    
+    def score(self, tf, df, cf, cl, ld):
+        pass
+    
+    def set_arg(self, name, value):
+        self.args[name] = value
+    
+    
+class TFIDF(Scorer):
+            
+    def score(self, tf, df, cf, cl, ld):
+        nD = self.args['D']
+        return tf * math.log(nD / df)
+
+
+class BM25(Scorer):
+    
+    def __init__(self, b, k1):
+        super(BM25, self).__init__()
+        self.b = b
+        self.k1 = k1
+    
+    def score(self, tf, df, cf, cl, ld):
+        nD = self.args['D']
+        eld = cl/nD
+        norm = self.k1 * (1 - self.b + self.b * ld / eld)
+        return tf / (tf + norm) * math.log((nD - df + 0.5) / (df + 0.5))
+
+    
+class DirichletSmoothingLM(Scorer):
+    
+    def __init__(self, mu=100):
+        super(DirichletSmoothingLM, self).__init__()
+        self.mu = mu
+            
+    def score(self, tf, df, cf, cl, ld):
+        return (tf + self.mu * cf / cl) / (self.mu + ld)
 
 
 class Search:
 
-    def __init__(self, inverted_index: InvertedIndex, pre_processor: PreProcessor):
+    def __init__(self, 
+                 inverted_index: InvertedIndex, 
+                 documents, 
+                 pre_processor: PreProcessor, 
+                 scorer=DirichletSmoothingLM()):
         self.pre_processor = pre_processor
         self.inverted_index = inverted_index
+        self.documents = documents
+        self.scorer = scorer
+        self.scorer.set_arg('D', len(documents))
+        
+    def set_indices(self, inverted_index: InvertedIndex, documents):
+        self.inverted_index = inverted_index
+        self.documents = documents
+        self.scorer.set_arg('D', len(documents))
 
     def search(self, query, n=1, retrievable_paragraphs=None):
         query_bag_of_words = self.pre_processor.preprocess(query)
@@ -174,13 +226,14 @@ class Search:
 
         for term in query_bag_of_words:
             posting_list = self.inverted_index.index[term[0]]
+            df = len(posting_list)
             for post in posting_list:
                 if retrievable_paragraphs is None or post[0] in retrievable_paragraphs:
                     tf = post[1]
                     cf = self.inverted_index.dictionary[term]
                     ld = self.inverted_index.lengths[post[0]]
                     cl = self.inverted_index.cl
-                    results[post[0]] += language_model(tf, cf, cl, ld)
+                    results[post[0]] += self.scorer.score(tf, df, cf, cl, ld)
 
         results = sorted(list(results.items()), key=lambda t: -t[1])
 
