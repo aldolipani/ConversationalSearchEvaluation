@@ -4,7 +4,7 @@ import numpy as np
 from utils import get_session_ids, get_all_sequences, get_topics, get_sub_topics, product, to_matrix
 from search_engine import *
 from numpy.random import choice
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 from multiprocessing import Pool
 
 np.set_printoptions(precision=3)
@@ -321,12 +321,6 @@ def necs(sequence, alpha_rel, alpha_irr):
 
 # %%
 
-num_samples = 1
-res = 10
-
-
-# %%
-
 class PoolHelper(object):
     def __init__(self, num_samples, res, search):
         self.num_samples = num_samples
@@ -428,27 +422,25 @@ def get_all_evaluation_measures(pool_res):
 
 # %%
 
-res = 10
-
 max_necs = 0
-max_pool_res = None
 max_mu = 0
 
 for mu in tqdm(range(10 + 1)):
     mu = (mu + 1) * 10
 
     search = Search(None, {}, pre_preocessor, scorer=DirichletSmoothingLM(mu))
-
-    noises = list(range(0, res + 1))
-    pool = Pool(len(noises))
-    pool_res = list(pool.imap_unordered(PoolHelper(10000, res, search), noises, chunksize=1))
-    pool.terminate()
+    pool_res = [PoolHelper(10000, 1, search)(0)]
 
     cur_necs = max(get_all_evaluation_measures(pool_res)['necs'])
     if max_necs < cur_necs:
         max_necs = cur_necs
         max_mu = mu
-        max_pool_res = pool_res
+
+res = 10
+search = Search(None, {}, pre_preocessor, scorer=DirichletSmoothingLM(max_mu))
+noises = list(range(0, res + 1))
+pool = Pool(len(noises))
+max_pool_res = list(pool.imap_unordered(PoolHelper(10000, res, search), noises, chunksize=1))
 
 get_all_evaluation_measures(max_pool_res)
 
