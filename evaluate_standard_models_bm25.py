@@ -117,7 +117,7 @@ def main():
     max_pool_res = None
     max_k1 = 0
     max_b = 0
-    for k1 in tqdm(range(20 + 1)):
+    for k1 in tqdm(range(50 + 1)):
         k1 = k1 / 10 + 0.5
 
         for b in range(10 + 1):
