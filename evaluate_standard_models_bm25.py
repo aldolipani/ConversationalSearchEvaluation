@@ -117,8 +117,8 @@ def main():
     max_pool_res = None
     max_k1 = 0
     max_b = 0
-    for k1 in tqdm(range(50 + 1)):
-        k1 = k1 / 10 + 0.5
+    for k1 in tqdm(range(10 + 1)):
+        k1 = k1 / 10 + 0.1
 
         for b in range(10 + 1):
             b = b / 10
@@ -136,8 +136,8 @@ def main():
 
     # %% md
 
-    print('#b: ', b)
-    print('#k1', k1)
+    print('#b: ', max_b)
+    print('#k1', max_k1)
 
     res = 10
     search = Search(None, {}, pre_preocessor, scorer=BM25(max_b, max_k1))
