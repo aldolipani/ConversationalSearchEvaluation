@@ -172,7 +172,7 @@ class BM25(Scorer):
         nD = self.args['D']
         eld = cl / nD
         norm = self.k1 * (1 - self.b + self.b * ld / eld)
-        return tf / (tf + norm) * math.log((nD - df + 0.5) / (df + 0.5))
+        return tf / (tf + norm) * math.log(nD/df)
 
 
 class DirichletSmoothingLM(Scorer):
