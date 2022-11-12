@@ -1,9 +1,8 @@
 import math
 import pickle
-
-from nltk.tokenize import RegexpTokenizer
-from nltk.corpus import stopwords
 from collections import defaultdict
+from nltk.corpus import stopwords
+from nltk.tokenize import RegexpTokenizer
 
 tokenizer = RegexpTokenizer(r'\w+')
 stop_words = set(stopwords.words('english'))
@@ -172,7 +171,7 @@ class BM25(Scorer):
         nD = self.args['D']
         eld = cl / nD
         norm = self.k1 * (1 - self.b + self.b * ld / eld)
-        return tf / (tf + norm) * math.log(nD/df)
+        return tf / (tf + norm) * math.log(nD / df)
 
 
 class DirichletSmoothingLM(Scorer):

@@ -1,16 +1,17 @@
-import re
 import json
 import numpy as np
-from glob import glob
+import re
 from collections import defaultdict
-from numpy.random import choice
+from glob import glob
 from itertools import product
+from numpy.random import choice
+
 
 class RegExp:
-    
+
     def __init__(self):
         self.res = None
-    
+
     def get(self, pattern, line):
         match = re.search(pattern, line)
         if match:
@@ -19,9 +20,11 @@ class RegExp:
             self.res = None
         return self.res
 
-#rel_kind = 2 # dataset relevance
-rel_kind = 4 # user relevance
-    
+
+# rel_kind = 2 # dataset relevance
+rel_kind = 4  # user relevance
+
+
 def get_topics_old():
     topics = set()
     for log in glob("./logs/*.log"):
@@ -50,6 +53,7 @@ def get_sub_topics(path_sub_topic):
             sub_topics[topic].append(sub_topic)
     return sub_topics
 
+
 def get_num_question_answered(lines):
     reg_exp = RegExp()
     n_questions = 0
@@ -68,6 +72,7 @@ def get_num_question_answered(lines):
             trigger = False
     return n_questions_answered, n_questions
 
+
 def get_num_question_answered_list(topic):
     res = []
     for log in glob("./logs/" + topic + "*.log"):
@@ -76,36 +81,40 @@ def get_num_question_answered_list(topic):
             res.append(item)
     return res
 
+
 # CBP Discount Function
 
 
-def cbp(sequence, alpha = 0.8):
+def cbp(sequence, alpha=0.8):
     res = 0.0
     for m, item in enumerate(sequence):
         if item[rel_kind]:
             res += dd_cbp(alpha, m)
     return res
 
-def get_cbp_list(sequence_list, alpha = 0.8):
+
+def get_cbp_list(sequence_list, alpha=0.8):
     cbp_scores = []
     for sequence in sequence_list:
         cbp_scores.append(cbp(sequence, alpha))
     return cbp_scores
 
 
-def ncbp(sequence, alpha = 0.8):
+def ncbp(sequence, alpha=0.8):
     res = 0.0
     for m, item in enumerate(sequence):
         if item[rel_kind]:
             res += dd_ncbp(alpha, m)
-        #print(res, dd_ncbp(alpha, m))
+        # print(res, dd_ncbp(alpha, m))
     return res
 
-def get_ncbp_list(sequence_list, alpha = 0.8):
+
+def get_ncbp_list(sequence_list, alpha=0.8):
     ncbp_scores = []
     for sequence in sequence_list:
         ncbp_scores.append(ncbp(sequence, alpha))
     return ncbp_scores
+
 
 # CBR+ Discount Function
 def dd_cbp_p(alpha, beta, m, sequence):
@@ -118,6 +127,7 @@ def dd_cbp_p(alpha, beta, m, sequence):
     for _ in range(m - len(sequence)):
         res *= beta
     return res
+
 
 def dd_cbp_p_new(alpha, beta, m, sequence):
     res = 1.0
@@ -135,12 +145,14 @@ def dd_cbp_p_new(alpha, beta, m, sequence):
         res *= beta
     return res
 
+
 def cbp_p(sequence, alpha, beta):
     res = 0.0
     for m, item in enumerate(sequence):
         if item[rel_kind]:
             res += dd_cbp_p(alpha, beta, m, sequence)
     return res
+
 
 def ncbp_p(sequence, alpha, beta):
     res = 0.0
@@ -150,7 +162,8 @@ def ncbp_p(sequence, alpha, beta):
         if item[rel_kind]:
             res += val
         norm += val
-    return res/norm
+    return res / norm
+
 
 def get_cbp_tt_list(sequence_list, alpha, beta):
     cbp_tt_scores = []
@@ -165,6 +178,7 @@ def get_ncbp_p_list(sequence_list, alpha, beta):
         res.append(ncbp_p(sequence, alpha, beta))
     return res
 
+
 # Precision Discount Function
 
 
@@ -175,11 +189,13 @@ def ncp(sequence):
             res += dd_cp(sequence)
     return res
 
+
 def get_ncp_list(sequence_list):
     cp_scores = []
     for sequence in sequence_list:
         cp_scores.append(ncp(sequence))
     return cp_scores
+
 
 # Satisfaction
 
@@ -192,9 +208,10 @@ def get_satisfaction(lines):
                 satisfaction = 1
     return satisfaction
 
+
 # Transitions
 
-def get_transitions(lines, include_rel = False):
+def get_transitions(lines, include_rel=False):
     reg_exp = RegExp()
     n_subtopics = -1
     current_subtopic = 0
@@ -202,12 +219,12 @@ def get_transitions(lines, include_rel = False):
     is_rel = False
     transitions = defaultdict(int)
     for line in lines:
-        #print(line)
+        # print(line)
         if reg_exp.get("#sub-topics (\\d+)", line):
             n_subtopics = int(reg_exp.res)
         elif reg_exp.get("sub-topic (\\d+)", line):
             subtopic = int(reg_exp.res)
-        elif reg_exp.get("relevant\\? ([yYnN])", line): # delayed
+        elif reg_exp.get("relevant\\? ([yYnN])", line):  # delayed
             if not include_rel:
                 transitions[(current_subtopic, subtopic)] += 1
             else:
@@ -221,26 +238,26 @@ def get_transitions(lines, include_rel = False):
     return transitions
 
 
-def get_transitions_table(num_subtopics, transitions_list, epsilon = 0.0):
+def get_transitions_table(num_subtopics, transitions_list, epsilon=0.0):
     transitions_table = defaultdict(float)
     for transitions in transitions_list:
         for key, count in transitions.items():
             transitions_table[key] += count
-    
+
     norms = defaultdict(float)
-    for from_subtopic, to_subtopic in product(range(num_subtopics+1), range(1, num_subtopics+2)):
-        if not (from_subtopic == 0 and to_subtopic == num_subtopics + 1):            
+    for from_subtopic, to_subtopic in product(range(num_subtopics + 1), range(1, num_subtopics + 2)):
+        if not (from_subtopic == 0 and to_subtopic == num_subtopics + 1):
             transitions_table[(from_subtopic, to_subtopic)] += epsilon
         norms[from_subtopic] += transitions_table[(from_subtopic, to_subtopic)]
-    
-    for from_subtopic, to_subtopic in product(range(num_subtopics+1), range(1, num_subtopics+2)):
+
+    for from_subtopic, to_subtopic in product(range(num_subtopics + 1), range(1, num_subtopics + 2)):
         if norms[from_subtopic] > 0.0:
             transitions_table[(from_subtopic, to_subtopic)] /= norms[from_subtopic]
-            
+
     return transitions_table
 
 
-def get_transitions_tables(num_subtopics, transitions_list, epsilon = 0.0):
+def get_transitions_tables(num_subtopics, transitions_list, epsilon=0.0):
     rel_transitions_table = defaultdict(float)
     irr_transitions_table = defaultdict(float)
     for transitions in transitions_list:
@@ -249,27 +266,28 @@ def get_transitions_tables(num_subtopics, transitions_list, epsilon = 0.0):
                 rel_transitions_table[(key[0], key[1])] += count
             else:
                 irr_transitions_table[(key[0], key[1])] += count
-    
+
     rel_norms = defaultdict(float)
-    for from_subtopic, to_subtopic in product(range(num_subtopics+1), range(1, num_subtopics+2)):
-        if from_subtopic > 0:            
+    for from_subtopic, to_subtopic in product(range(num_subtopics + 1), range(1, num_subtopics + 2)):
+        if from_subtopic > 0:
             rel_transitions_table[(from_subtopic, to_subtopic)] += epsilon
         rel_norms[from_subtopic] += rel_transitions_table[(from_subtopic, to_subtopic)]
-    
+
     irr_norms = defaultdict(float)
-    for from_subtopic, to_subtopic in product(range(num_subtopics+1), range(1, num_subtopics+2)):
+    for from_subtopic, to_subtopic in product(range(num_subtopics + 1), range(1, num_subtopics + 2)):
         if not (from_subtopic == 0 and to_subtopic == num_subtopics + 1):
             irr_transitions_table[(from_subtopic, to_subtopic)] += epsilon
         irr_norms[from_subtopic] += irr_transitions_table[(from_subtopic, to_subtopic)]
-    
-    for from_subtopic, to_subtopic in product(range(num_subtopics+1), range(1, num_subtopics+2)):
+
+    for from_subtopic, to_subtopic in product(range(num_subtopics + 1), range(1, num_subtopics + 2)):
         if rel_norms[from_subtopic] > 0.0:
-            rel_transitions_table[(from_subtopic, to_subtopic)] /= (rel_norms[from_subtopic]) 
-    
-    for from_subtopic, to_subtopic in product(range(num_subtopics+1), range(1, num_subtopics+2)):
+            rel_transitions_table[(from_subtopic, to_subtopic)] /= (rel_norms[from_subtopic])
+
+    for from_subtopic, to_subtopic in product(range(num_subtopics + 1), range(1, num_subtopics + 2)):
         irr_transitions_table[(from_subtopic, to_subtopic)] /= (irr_norms[from_subtopic])
-    
+
     return rel_transitions_table, irr_transitions_table
+
 
 def get_qrels(topic):
     # paragraph -> subtopic_set
@@ -280,6 +298,7 @@ def get_qrels(topic):
             if items[1]:
                 qrels[int(items[0])] = set([int(subtopic_id) for subtopic_id in items[1].strip().split(" ")])
     return qrels
+
 
 def get_sequence_old(lines, qrels):
     reg_exp = RegExp()
@@ -302,8 +321,9 @@ def get_sequence_old(lines, qrels):
                 rel = True
             sequence.append((current_subtopic, paragraph, rel, subtopic, user_rel, query))
             current_subtopic = subtopic
-        
+
     return sequence
+
 
 def get_session_ids(path_log):
     res = set()
@@ -316,6 +336,7 @@ def get_session_ids(path_log):
             res.add(session_id)
     return list(res)
 
+
 # new version
 def get_sequence(lines):
     reg_exp = RegExp()
@@ -325,25 +346,26 @@ def get_sequence(lines):
     query = ""
     sequence = []
     for line in lines:
-        #print(line)
+        # print(line)
         items = line.split('\t')
         content = items[2]
         if reg_exp.get(r'user queries subtopic (\d+)', content):
             sub_topic = int(reg_exp.res)
             reg_exp.get(r'with: (.+)', content)
             query = reg_exp.res.lower().strip()
-            #print(sub_topic, query)
+            # print(sub_topic, query)
         elif reg_exp.get(r'engine returns: (\d+)', content):
             document = int(reg_exp.res)
-            #print(document)
+            # print(document)
         elif reg_exp.get('users judges paragraph ' + str(document) + ' (.+)', content):
             rel = reg_exp.res
-            #print(rel)
+            # print(rel)
             action = (current_sub_topic, document, rel, sub_topic, query)
-            if not (len(sequence) > 0 and action[4] == sequence[-1][4]): # remove duplicate interactions
+            if not (len(sequence) > 0 and action[4] == sequence[-1][4]):  # remove duplicate interactions
                 sequence.append(action)
             current_sub_topic = sub_topic
     return sequence
+
 
 # new
 def get_all_sequences(path_log, session_ids):
@@ -373,13 +395,14 @@ def get_sequence_list(topic, qrels):
     return sequence_list
 
 
-def get_transitions_list(topic, include_rel = False):
+def get_transitions_list(topic, include_rel=False):
     transitions_list = []
     for log in glob("./logs/" + topic + "*.log"):
         with open(log) as f:
             transitions = get_transitions(f.readlines(), include_rel)
             transitions_list.append(transitions)
     return transitions_list
+
 
 def get_satisfaction_list(topic):
     satisfaction_list = []
@@ -396,7 +419,7 @@ def get_satisfaction_list(topic):
 def parse_squad():
     with open("dev-v2.0.proc") as f:
         dataset = json.load(f)
-    
+
     topics = {}
     documents = {}
     qrels = {}
@@ -423,7 +446,7 @@ def parse_squad():
 def to_matrix(table):
     size = max([item[1] for item in table])
     matrix = []
-    for i in range(0,size):
+    for i in range(0, size):
         matrix.append([])
         for j in range(size):
             if (i, j + 1) in table:
@@ -438,56 +461,57 @@ def generate_sequence(num_subtopics):
     prob = 1.0
     sequence = []
     current_subtopic = 0
-    
+
     next_subtopic = choice(range(1, num_subtopics + 1), 1)[0]
-    prob *= 1.0/num_subtopics
+    prob *= 1.0 / num_subtopics
     sequence.append((current_subtopic, next_subtopic))
     current_subtopic = next_subtopic
-    
+
     while next_subtopic != num_subtopics + 1:
         next_subtopic = choice(range(1, num_subtopics + 2), 1)[0]
-        prob *= 1.0/(num_subtopics + 1)
+        prob *= 1.0 / (num_subtopics + 1)
         sequence.append((current_subtopic, next_subtopic))
         current_subtopic = next_subtopic
-        
+
     return sequence, prob
+
 
 def generate_sequence_from_table(num_subtopics, table):
     prob = 1.0
     table = to_matrix(table)
     sequence = []
     current_subtopic = 0
-    
+
     next_subtopic = choice(range(1, num_subtopics + 2), 1, p=table[0])[0]
     prob *= table[0, next_subtopic - 1]
     sequence.append((current_subtopic, next_subtopic))
     current_subtopic = next_subtopic
-    
+
     while next_subtopic != num_subtopics + 1:
         next_subtopic = choice(range(1, num_subtopics + 2), 1, p=table[current_subtopic])[0]
-        prob *= table[current_subtopic, next_subtopic-1]
+        prob *= table[current_subtopic, next_subtopic - 1]
         sequence.append((current_subtopic, next_subtopic))
         current_subtopic = next_subtopic
-    
+
     return sequence, prob
 
 
 class SequenceGenerator:
-    
+
     def __init__(self, num_subtopics, rel_table, irr_table):
         self.num_subtopics = num_subtopics
         self.rel_table = to_matrix(rel_table)
         self.irr_table = to_matrix(irr_table)
         self.relevance = False
         self.current_subtopic = 0
-        
+
     def __iter__(self):
-        #self.current_subtopic = 0
+        # self.current_subtopic = 0
         return self
-    
+
     def set_relevance(self, relevance):
         self.relevance = relevance
-    
+
     def __next__(self):
         next_subtopic = -1
         prob = -1
