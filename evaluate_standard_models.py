@@ -1,11 +1,10 @@
 # %%
 
 import numpy as np
-from utils import get_session_ids, get_all_sequences, get_topics, get_sub_topics, product, to_matrix
-from search_engine import *
 from numpy.random import choice
-from tqdm import tqdm
-from multiprocessing import Pool
+
+from search_engine import *
+from utils import product, to_matrix
 
 
 def dd_cp(alpha, m, l):
@@ -318,4 +317,3 @@ class PoolHelper(object):
             return documents
         else:
             return set(choice(list(documents), replace=False, size=int(len(documents) * p)))
-

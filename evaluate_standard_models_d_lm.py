@@ -1,13 +1,13 @@
 # %%
 
+from multiprocessing import Pool
+
 import numpy as np
+from tqdm import tqdm
 
 from evaluate_standard_models import PoolHelper, get_all_evaluation_measures
-from utils import get_session_ids, get_all_sequences, get_topics, get_sub_topics, product, to_matrix
 from search_engine import *
-from numpy.random import choice
-from tqdm import tqdm
-from multiprocessing import Pool
+from utils import get_session_ids, get_all_sequences, get_topics, get_sub_topics
 
 np.set_printoptions(precision=3)
 
